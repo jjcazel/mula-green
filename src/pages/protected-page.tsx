@@ -1,5 +1,6 @@
-import React from "react";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
+
+export const getServerSideProps = withPageAuthRequired();
 
 const ProtectedPage = () => {
   return (
@@ -10,4 +11,4 @@ const ProtectedPage = () => {
   );
 };
 
-export default withPageAuthRequired(ProtectedPage as any);
+export default ProtectedPage;
