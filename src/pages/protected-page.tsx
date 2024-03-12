@@ -10,4 +10,4 @@ const ProtectedPage = () => {
   );
 };
 
-export default withPageAuthRequired(ProtectedPage);
+export default withPageAuthRequired(ProtectedPage as any);
