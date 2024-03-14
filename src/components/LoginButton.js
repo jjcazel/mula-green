@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { login } from "../utils/auth";
+import { login } from "../app/login"
 
 const LoginButton = () => <button onClick={login}>Log In</button>;
 
