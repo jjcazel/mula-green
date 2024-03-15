@@ -13,10 +13,12 @@ export default function ProfileClient() {
   return user ? (
     <>
       <div>
-        <img
-          src={user?.picture || "/default-avatar.png"}
-          alt={user?.name || "Username"}
-        />
+        <picture>
+          <img
+            src={user?.picture || "/default-avatar.png"}
+            alt={user?.name || "Username"}
+          />
+        </picture>
         <h2>{user.name}</h2>
         <p>{user.email}</p>
       </div>
