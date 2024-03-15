@@ -15,7 +15,9 @@ export default async function ProfileServer() {
   return user ? (
     <>
       <div>
-        <img src={user.picture} alt={user.name} />
+        <picture>
+          <img src={user.picture} alt={user.name} />
+        </picture>
         <h2>{user.name}</h2>
         <p>{user.email}</p>
       </div>
