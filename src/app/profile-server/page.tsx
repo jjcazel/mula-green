@@ -1,5 +1,3 @@
-import LoginButton from "@/components/LoginButton";
-import LogoutButton from "@/components/LogoutButton";
 import { getSession } from "@auth0/nextjs-auth0";
 
 interface User {
@@ -21,12 +19,10 @@ export default async function ProfileServer() {
         <h2>{user.name}</h2>
         <p>{user.email}</p>
       </div>
-      <LogoutButton />
     </>
   ) : (
     <>
       <div>You&apos;re logged out dummy!</div>
-      <LoginButton />
     </>
-  ); // Consider rendering something else or handling the null case
+  );
 }
