@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import LoginButton from "../src/components/LoginButton";
+import LoginButton from "../src/app/components/Buttons/LoginButton";
 // Mock the auth module
 jest.mock("../src/app/login", () => ({
   login: jest.fn(),
