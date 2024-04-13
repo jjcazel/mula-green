@@ -1,7 +1,5 @@
 "use client";
 
-import LoginButton from "@/components/LoginButton";
-import LogoutButton from "@/components/LogoutButton";
 import { useUser } from "@auth0/nextjs-auth0/client";
 
 export default function ProfileClient() {
@@ -22,12 +20,10 @@ export default function ProfileClient() {
         <h2>{user.name}</h2>
         <p>{user.email}</p>
       </div>
-      <LogoutButton />
     </>
   ) : (
     <>
       <div>You&apos;re logged out dummy!</div>
-      <LoginButton />
     </>
   );
 }
