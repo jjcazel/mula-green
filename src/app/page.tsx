@@ -1,11 +1,9 @@
-
-
 export default function HomePage() {
   return (
     <>
-      <div className="flex items-center justify-center flex-col">
-        <div className="flex flex-col">
-          <h1>Welcome to My Application</h1>
+      <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col items-center mt-8 text-xl text-mula-green">
+          <h1>Welcome to MulaGreen, your Personal Finance Tracker</h1>
         </div>
       </div>
     </>
